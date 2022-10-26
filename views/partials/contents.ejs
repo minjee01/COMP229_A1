@@ -1,0 +1,125 @@
+<% if(title == "home"){ %>
+    <section id="homepage">
+        <h1 class="display-5">Welcome to Minjee's Home Page</h1><hr>
+        <p>This is my personal Portfolio website using ExpressJS for COMP229 assignment.<br>
+            <a href="/aboutMe">Click Here!</a> to learn more about me.<hr>
+        </p>
+        <p>Mission Statment:<br>
+            Humble myself by acknowledging that I can be sarcastic, egotistical,
+            wrong about most anything at most any time, and narrow-minded and by constantly
+            striving to transform my weakness into strengths. <br><br>
+            Remember what's important in life is happiness, free time, peace of mind, security, and wealth, not only
+            financial wealth but also in spirit and positive attitude. <br><br>
+            Here is my favourite quote: <br>
+            "There is nothing noble in being superior to your fellow man; true nobility is being superior to your former self."
+            -Kingsman
+        </p>
+    </section>
+<% } %>
+    
+<% if(title == "aboutMe"){ %>
+    <section id="aboutMe">
+        <h1 class="display-5">About Me</h1><hr>
+        <img src="Assets/images/minjee.jpg" alt="minjee" class="minjee"><br><br>
+        <p>Hi! My name is Minjee Kim and I am currently in Advnaced Diploma in Software Engineering Technology, 
+            specialising in Artificial Intelligence. <br>
+            I have cultivated extensive abilities in software systems design, testing, and applying Agile methodology 
+            in hands-on projects, where I took leadership roles, such as Scrum Master. Furthermore, I am currently 
+            working on a project called ‘ANABADA’, a second-hand product trading system as a Frontend Developer. 
+            Some of my skills include those in C#, Java, JavaScript, Python, SQL, and HTML/CSS, and I continue to broaden 
+            this knowledge through self-learning and my academic courses.
+        </p>
+        
+        <p><a href="Assets/Minjee_Resume.pdf" target="_blank">Check out my resume!</a></p>
+    </section>
+<% } %>
+
+<% if(title == "projects"){ %>
+    <section id="projects">
+        <h1 class="display-5">Welcome to the <%= title %> page</h1><hr>
+        <div><img src="Assets/images/project1.png" alt="project1" class="project1">
+            <div class="p1">
+            <br>
+            Project Name: Member Registration <br><br>
+            Description: Created with HTML, CSS, and JavaScript. Especially using regular expressions in JavaScript, 
+            I set a sequence of characters that specifies a search pattern to regulate rules in a form. 
+            </div>            
+        </div>
+        <div><img src="Assets/images/project2.png" alt="project2" class="project2">
+            <div class="p2">
+            <br>
+            Project Name: Butterfly Buster <br><br>
+            Description: A simple game which is clicking the flying butterfly and earning scores.<br>
+            The game is only created with HTML, CSS and JavaScript.
+            </div>
+        </div>
+        <div><img src="Assets/images/project3.png" alt="project3" class="project3">
+            <div class="p3">
+            <br>
+            Project Name: Marine Photo Gallery <br><br>
+            Description: A photo Gallery which is automatically move on after 3 seconds within 5 photos
+            that I picked according to the my theme, Marine.<br>
+            Created with HTML, CSS, and JavaScript.
+            </div>
+        </div>
+    </section>
+<% } %>
+
+<% if(title == "services"){ %>
+    <section id="services">
+        <h1 class="display-5">Welcome to the <%= title %> page</h1><hr>
+        <div><img src="Assets/images/service1.png" alt="service1" class="service1">
+            <br>
+            <p>
+                <br>
+                Service Name: ANABADA <br><br>
+            Description: Currently working on a second-hand product trading website 
+            that can be only accessed from Centennial college students.<br>
+            Our team 'ANABADA' is consist of 5 memebers, and I take part in 
+            front-end position.
+            </p>   
+            </div>           
+        <div><img src="Assets/images/service2.jpg" alt="service2" class="service2">
+            <br>
+            <p>
+                <br>
+                Service Name: Programming<br><br>
+            Description: HTML/CSS, JavaScript, C#, and OS are what I have learnt
+            last a couple of semesters. 
+            I can help you with those programming/markup languages as far as I understand.
+            </p>
+            </div>
+    </section>
+<% } %>
+
+<% if(title == "contactMe"){ %>
+    <section id="contactMe">
+        <h1 class="display-5"><%= title %></h1><hr>
+        <form>
+            <h2>Contact</h2><br />
+            <fieldset id="form" class="text">
+                <label for="fname">First Name</label>
+                <input type="text" name="fname" id="firstName" placeholder="Enter Your First Name"/><br /><br />
+                <label for="lname">Last Name</label>
+                <input type="text" name="lname" id="lastName" placeholder="Enter Your Last Name"/><br /><br />
+                <label for="email">Contact Number</label>
+                <input type="text" name="phone" id="phone" placeholder="Enter Your Contact Number"/><br /><br />
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email" placeholder="Enter Your Email"/><br /><br />
+                <label for="email">Message</label>
+                <input type="text" name="message" id="msg" placeholder="Leave a Message!"/><br /><br />
+            </fieldset>
+    
+            <div><button onclick="location.href='mailto:mkim276@my.centennialcollege.ca';">Submit Form</button>
+                <button type="reset" value="Clear Form">Clear Form</button>
+            </div>
+        </form>
+
+        <div class="minjeeContact">
+        <p><b>Minjee's Phone Number: (236) 993-5906</b></p>
+        <p><b>Minjee's email address: mkim276@my.centennialcollege.ca</b></p>
+        </div>
+    
+    </section>
+    <p></p>
+<% } %>

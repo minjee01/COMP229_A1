@@ -1,0 +1,53 @@
+<!-- Main Nav -->
+<nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+    <a class="navbar-brand" href="/"><img src="Assets/images/logo.png" alt="logo" class="logo"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+        <li class="nav-item">
+            <% if ((title == "home") || (title =="/")){ %>
+            <a class="nav-link active" aria-current="page" href="/home"><i class="fas fa-solid fa-house"></i> Home</a>
+            <% } else { %>
+            <a class="nav-link" aria-current="page" href="/home"><i class="fas fa-solid fa-house"></i> Home</a>
+            <% } %>
+        </li>
+
+        <li class="nav-item">
+            <% if (title == "aboutMe"){ %>
+            <a class="nav-link active" aria-current="page" href="/aboutMe"><i class="fas fa-solid fa-user"></i> About Me</a>
+            <% } else { %>
+            <a class="nav-link" aria-current="page" href="/aboutMe"><i class="fas fa-solid fa-user"></i> About Me</a>
+            <% } %>
+        </li>
+
+        <li class="nav-item">
+            <% if (title == "projects"){ %>
+            <a class="nav-link active" aria-current="page" href="/projects"><i class="fas fa-solid fa-book"></i> projects</a>
+            <% } else { %>
+            <a class="nav-link" aria-current="page" href="/projects"><i class="fas fa-solid fa-book"></i> projects</a>
+            <% } %>
+        </li>
+
+        <li class="nav-item">
+            <% if (title == "services"){ %>
+            <a class="nav-link active" aria-current="page" href="/services"><i class="fas fa-solid fa-file"></i> services</a>
+            <% } else { %>
+            <a class="nav-link" aria-current="page" href="/services"><i class="fas fa-solid fa-file"></i> services</a>
+            <% } %>
+        </li>
+
+        <li class="nav-item">
+            <% if (title == "contactMe"){ %>
+            <a class="nav-link active" aria-current="page" href="/contactMe"><i class="fas fa-solid fa-id-card"></i> contact Me</a>
+            <% } else { %>
+            <a class="nav-link" aria-current="page" href="/contactMe"><i class="fas fa-solid fa-id-card"></i> contact Me</a>
+            <% } %>
+        </li>
+
+    </div>
+    </div>
+</nav>  

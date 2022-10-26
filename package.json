@@ -1,0 +1,37 @@
+{
+  "name": "comp229_a1",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node ./server.js"
+  },
+  "engines": {
+    "node": "^16.17.0",
+    "npm": "^8.00.0"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.2.0",
+    "bootstrap": "^5.2.2",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "ejs": "~2.6.1",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "jquery": "^3.6.1",
+    "mongoose": "^6.7.0",
+    "morgan": "~1.9.1",
+    "popper.js": "^1.16.1"
+  },
+  "description": "demo app for comp229 a1",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/minjee01/COMP229_A1.git"
+  },
+  "author": "Minjee Kim",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/minjee01/COMP229_A1/issues"
+  },
+  "homepage": "https://github.com/minjee01/COMP229_A1#readme"
+}
