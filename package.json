@@ -1,5 +1,5 @@
 {
-  "name": "comp229_a1",
+  "name": "comp229_a2",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -26,7 +26,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/minjee01/COMP229_A1.git"
+    "url": "git+https://github.com/minjee01/COMP229_A2.git"
   },
   "author": "Minjee Kim",
   "license": "ISC",
