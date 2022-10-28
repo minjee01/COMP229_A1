@@ -6,36 +6,28 @@
     <div class="row">
       <div class="col-md-offset-3 col-md-10">
         <h1><%= title %></h1>
-        <% if(typeof displayName == 'string' && displayName) { %>
         <a href="/contact-list/add" class = "btn btn-primary" role="button">
           Add a Contact
         </a>
-        <% } %>
         <br>
         <table class="table table-bordered table-striped table-hover">
           <!-- Header Row -->
           <tr>
-            <% if(typeof displayName == 'string' && displayName) { %>
               <th class="text-center">Name</th>
               <th class="text-center">Number</th>
               <th class="text-center">Email</th>
               <th class="text-center"></th>
               <th class="text-center"></th>
-            <% } else { %>
-              <th class="text-center">Name</th>
-              <th class="text-center">Number</th>
-              <th class="text-center">Email</th>
-            <% } %>
           </tr>
           
           <!-- Repeatable Template Row -->
 
           <% for(var count = 0; count < ContactList.length; count++){ %>
             <tr>
-              <% if(typeof displayName == 'string' && displayName) { %>
                 <td class = "text-center"><%= ContactList[count].name %></td>
                 <td class = "text-center"><%= ContactList[count].number %></td>
                 <td class = "text-center"><%= ContactList[count].email %></td>
+
                 <td class="text-center">
                     <a href="/contact-list/edit/<%= ContactList[count]._id %>" class="btn btn-primary">
                       Edit
@@ -46,11 +38,6 @@
                     Delete
                     </a>
                 </td>
-              <% } else { %>
-                <td class = "text-center"><%= ContactList[count].name %></td>
-                <td class = "text-center"><%= ContactList[count].number %></td>
-                <td class = "text-center"><%= ContactList[count].email %></td>
-              <%} %>
             </tr>
           <% } %>
         </table>  
