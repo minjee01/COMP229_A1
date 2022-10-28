@@ -2,6 +2,8 @@ var express = require('express');
 var router = express.Router();
 var mongoose = require('mongoose');
 
+var jwt = require('jsonwebtoken');
+
 //create a reference to the model
 var Contact = require('../models/contact');
 
